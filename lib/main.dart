@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_search/page/home_page.dart';
+import 'package:login_search/page/login_page.dart';
+import 'package:login_search/page/teste_login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Page'),
+      home: const LoginPage(),
     );
   }
 }
