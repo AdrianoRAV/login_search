@@ -29,43 +29,47 @@ class _MyHomePageState extends State<LoginPage> {
         )),
         child: Padding(
           padding: const EdgeInsets.all(32.0),
-          child: Column(
-            children: [
-              //email
-              TextField(
-                decoration: InputDecoration(
-                  labelText: 'Login',
-                ),
-              ),
-              SizedBox(height: 16.0),
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Senha',
-                ),
-              ),
-              SizedBox(height: 16.0),
-              GestureDetector(
-                onTap: () {
-                  // Adicione aqui a navegação para a página de política de privacidade
-                  // Exemplo: Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyPolicyPage()));
-                },
-                child: Text(
-                  'Política de Privacidade',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    decoration: TextDecoration.underline,
+          child: Container(
+            alignment: Alignment.center,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //email
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Login',
                   ),
                 ),
-              ),
-              SizedBox(height: 16.0),
-              ElevatedButton(
-                onPressed: () {
-                  // Adicione aqui a lógica de autenticação
-                },
-                child: Text('Entrar'),
-              ),
-            ],
+                SizedBox(height: 16.0),
+                TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Senha',
+                  ),
+                ),
+                SizedBox(height: 16.0),
+                GestureDetector(
+                  onTap: () {
+                    // Adicione aqui a navegação para a página de política de privacidade
+                    // Exemplo: Navigator.push(context, MaterialPageRoute(builder: (context) => PrivacyPolicyPage()));
+                  },
+                  child: Text(
+                    'Política de Privacidade',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ),
+                SizedBox(height: 16.0),
+                ElevatedButton(
+                  onPressed: () {
+                    // Adicione aqui a lógica de autenticação
+                  },
+                  child: Text('Entrar'),
+                ),
+              ],
+            ),
           ),
         ),
       ),
